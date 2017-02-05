@@ -1,0 +1,32 @@
+
+// Our variables
+$base-font-family: "Avenir Next", Avenir, "Franklin Gothic", sans-serif;
+$base-font-size:   16px;
+$base-font-weight: 500;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #111;
+$background-color: #f0f0f0;
+$brand-color:      #00468d;
+
+$grey-color:       #aaa;
+$grey-color-light: lighten($grey-color, 18%);
+$grey-color-dark:  darken($grey-color, 18%);
+
+// Width of the content area
+$content-width:    800px;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+// Minima also includes a mixin for defining media queries.
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }

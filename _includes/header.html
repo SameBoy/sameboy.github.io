@@ -1,0 +1,21 @@
+<header class="site-header" role="banner">
+
+  <div class="wrapper">
+    <h1><a class="site-title" href="{{ "/" | relative_url}}"><img src="{{ "/logo.svg" | relative_url }}" alt="{{ site.title | escape }}"/></a></h1>
+    <p class="tag-line">{{ site.description | escape }}</p>
+
+    <nav class="site-nav">
+        {% for my_page in site.pages %}
+          {% if my_page.title and (my_page.group == null) %}
+          {% if page.url == my_page.url or page.group == my_page.title %}
+          <a class="page-link current" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+          {% else %}
+          <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+          {% endif %}
+          {% endif %}
+        {% endfor %}
+    </nav>
+
+  </div>
+
+</header>
