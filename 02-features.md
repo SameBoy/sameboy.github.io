@@ -36,7 +36,7 @@ lightbox: true
  * Passes many of [blargg's test ROMs](http://gbdev.gg8.se/wiki/articles/Test_ROMs#Blargg.27s_tests)
  * Emulates [PCM_12 and PCM_34 registers](https://github.com/LIJI32/GBVisualizer)
  * Emulates LCD timing effects, supporting the Demotronic trick, [GBVideoPlayer](https://github.com/LIJI32/GBVideoPlayer) and other tech demos
- * Regularly tested against a suite of over 2900 games via [automatic testing](/automation/), with a success rate of almost 100% on DMG games, and over 97% on the complete suite
+ * Regularly tested against a suite of over 2900 games via [automatic testing](/automation/), with a success rate of over 99% on both DMG and CGB games
  * Optional frame blending[^3]
  
   
