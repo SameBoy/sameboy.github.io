@@ -62,7 +62,7 @@ An expression can include any of these variables, which return their values:
     
 #### Dereferencing
 
-Any 16-bit or 25-bit may be dereferenced using square brackets (e.g. (`[hl]`, `[2:$4000]`) to retrieve the value of the 8-bit value at the specified address, zero-padded to 16-bit.
+Any 16-bit or 25-bit may be dereferenced using either square brackets (e.g. `[hl]`, `[2:$4000]`), to retrieve the 8-bit value at the specified address, zero-padded to 16-bit, or curly brackets (e.g. `{hl}`, `{2:$4000}`), to retrieve the the 16-bit value at the specified address.
 
 #### Operators
  
