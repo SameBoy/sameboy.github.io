@@ -13,6 +13,9 @@ dl, dd, ol, ul, figure {
 /**
  * Basic styling
  */
+ 
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600&display=swap');
+ 
 body {
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
   color: $text-color;
