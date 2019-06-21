@@ -149,15 +149,31 @@ Usage: `cartridge`
 
 Aliases: `mbc`
 
+### apu
+Displays information about the current state of the audio chip
+
+Usage: `apu`
+
+### wave
+Prints a visual representation of the wave RAM. Modifiers can be used for a (f)ull print (the default), a more (c)ompact one, or a one-(l)iner.
+
+Usage: `wave[/(f|c|l)]`
+
+### lcd
+Displays information about the current state of the LCD controller
+
+Usage: `lcd`
+
 ### palettes
 Displays the current CGB palettes.
 
 Usage: `palettes`
 
 ### breakpoint
-Add a new breakpoint at the specified address/expression. Can also modify the condition of existing breakpoints.
+Add a new breakpoint at the specified address/expression. Can also modify the condition of existing breakpoints. If the j modifier is used, the breakpoint will occur just before jumping to the target.
 
-Usage: `breakpoint <expression>[ if <condition expression>]`
+
+Usage: `breakpoint[/j] <expression>[ if <condition expression>]`
 
 ### delete
 Delete a breakpoint by its address, or all breakpoints.

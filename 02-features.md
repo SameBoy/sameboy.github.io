@@ -10,17 +10,18 @@ lightbox: true
 {% include image.html src="screenshots/boot" width="192" fullwidth="432" class="float-image" zoom=true %}
 {% include image.html src="screenshots/printer" width="192" fullwidth="864" class="float-image" zoom=true %}
 
- * Supports Game Boy (DMG) and Game Boy Color (CGB) emulation
+ * Supports Game Boy (DMG), Game Boy Color (CGB) and GBC-Mode Game Boy Advance (AGB) emulation
+ * Supports accurate high level emulation of Super Game Boy (SGB; NTSC and PAL) and Super Game Boy 2 (SGB2)
  * Lets you choose the model you want to emulate regardless of ROM
  * High quality 96KHz audio[^1]
  * Battery save support
  * Save states
- * Includes open source DMG and CGB boot ROMs:
-   * Complete support for (and documentation of) *all* game-specific palettes in the CGB boot ROM, for accurate emulation of Game Boy games on a Game Boy Color
+ * Includes open source boot ROMs for all emulated models:
+   * Complete support for (and documentation of) *all* game-specific palettes in the CGB/AGB boot ROM, for accurate emulation of Game Boy games on a Game Boy Color
    * Supports manual palette selection with key combinations, with 4 additional new palettes (A + B + direction)
    * Supports palette selection in a CGB game, forcing it to run in 'paletted' DMG mode, if ROM allows doing so
    * Support for games with a non-Nintendo logo in the header
-   * No long animation in the DMG boot
+   * No long animation in the DMG boot ROM
  * Four settings of color correction
  * Three settings of high-pass audio filters
  * Real time clock emulation
@@ -49,7 +50,7 @@ lightbox: true
 {% include image.html src="screenshots/quicklook" width="192" fullwidth="871" class="float-image" zoom=true %}
 
  * Retina and High DPI display support, allowing a wider range of scaling factors without artifacts
- * Several [scaling algorithms](/scaling/)[^4] (Including exclusive algorithms such as OmniScale)
+ * Several [scaling algorithms](/scaling/)[^4] (Including exclusive algorithms such as OmniScale) and filters
    * The OmniScale algorithms let you play games in 1080p, 4K and 5K resolutions!
  * Customizable controls
  * Joypad support
@@ -69,15 +70,16 @@ These features are currently exclusive to the macOS Cocoa port
     * Traditional step/next/continue/finish flow control
     * Expression evaluator with assignment support, register and memory access, and symbol support
     * Disassembler with symbol support
-    * Multiple conditional breakpoints
+    * Multiple conditional breakpoints, including jump-to breakpoints
     * Multiple conditional watchpoints
     * Call stack tracing
     * Tick counting
     * Cartridge and MBC information
+    * Accurate APU and PPU information
  * Memory viewer and editor[^3]
  * Video RAM viewer[^3]
  
- [^1]: 44.1KHz in older Windows versions
+ [^1]: 44.1KHz in older versions of Windows
  [^2]: Only in the Cocoa macOS port; graphical noise is used instead of camera input in the SDL version
  [^3]: Only in the Cocoa macOS port
  [^4]: Requires OpenGL 3.2 or Metal support
