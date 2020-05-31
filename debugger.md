@@ -80,7 +80,7 @@ The operators supported are:
  * `||`, `&&` – Boolean binary operators
  * `<<`, `>>` – Bitwise shift operators
  * `<=`, `<`, `>`, `>=`, `==`, `!=` – Boolean comparison operators
- * `=` – The assignment operator. The left side of the operator must be assigned: a register variable (e.g. `pc`, `d`) or a dereferenced value (e.g. `[de + 2]`). It returns the value of the left side after performing the read. When writing to hardware registers or the ROM, this might be different from the value written. The right side of the operator is always truncated to an 8-bit value.
+ * `=` – The assignment operator. The left side of the operator must be assignable: a register variable (e.g. `pc`, `d`) or a dereferenced value (e.g. `[de + 2]`). It returns the value of the left side after performing the write. When writing to hardware registers or the ROM, this might be different from the value written.
  * `:` – The bank operator. It can be used to cast or construct 25-bit addresses from 16-bit values. (e.g. `$c:$437a`, `a:hl`)
  
 Operators are grouped into priority groups, like in classical mathematical order of operations. It is possible to use parentheses (`(` and `)`) to override the default order.
