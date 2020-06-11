@@ -25,7 +25,7 @@
     border-top: $grey-color-dark solid 4px;
   }
 
-  @include media-query($on-palm) {
+  @media screen and (max-width: $on-palm), screen and (max-height: 800px) {
     text-align:center;
     line-height:36px;
     .page-link.current {
@@ -43,7 +43,7 @@
  */
 .site-footer {
   border-top: 1px solid $grey-color-light;
-  padding: $spacing-unit 0;
+  padding: 8px 0;
 }
 
 .footer-heading {
@@ -57,6 +57,11 @@
   margin-left: 0;
 }
 
+.social-media-list li {
+  display: inline-block;
+  margin-left: 8px;
+}
+
 .footer-col-wrapper {
   font-size: 15px;
   color: $grey-color;
@@ -65,8 +70,13 @@
 
 .footer-col {
   float: left;
-  margin-bottom: $spacing-unit / 2;
+  margin-bottom: 0;
 }
+
+.footer-col ul {
+  margin-bottom: 0;
+}
+
 
 .footer-col-1 {
   width: 25%;

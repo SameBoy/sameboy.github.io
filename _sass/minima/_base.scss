@@ -46,11 +46,23 @@ ul, ol, dl, figure,
 .site-header h1 {
     text-align:center;
     padding:24px 0;
+    @media screen and (max-width: $on-palm), screen and (max-height: 800px) {
+        padding: 12px 0;
+    }
+}
+
+.site-header h1 img {
+    @media screen and (max-width: $on-palm), screen and (max-height: 800px) {
+        height: 64px;
+    }
 }
 
 .tag-line {
     text-align:center;
     font-size:20px;
+    @media screen and (max-width: $on-palm), screen and (max-height: 800px) {
+        font-size:17px;
+    }
 }
 
 
