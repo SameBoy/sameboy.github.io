@@ -64,7 +64,7 @@ document.getElementById("message").innerText = "Loading...";
 
 	var loadHTML = function (data) {
 		if (data) {
-			data = data.replace(/<head([^>]*)>/i, '<head$1><base href="' + url + '">').replace(/<script(\s*src=["'][^"']*["'])?(\s*type=["'](text|application)\/javascript["'])?/gi, '<script type="text/htmlpreview"$1'); //Add <base> just after <head> and replace <script type="text/javascript"> with <script type="text/htmlpreview">
+			data = data.replace(/<head([^>]*)>/i, '<head$1><link rel="stylesheet" href="/assets/iframe.css"><base href="' + url + '">').replace(/<script(\s*src=["'][^"']*["'])?(\s*type=["'](text|application)\/javascript["'])?/gi, '<script type="text/htmlpreview"$1'); //Add <base> just after <head> and replace <script type="text/javascript"> with <script type="text/htmlpreview">
 			setTimeout(function () {
 				document.open();
 				document.write(data);
