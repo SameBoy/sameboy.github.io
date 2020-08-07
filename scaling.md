@@ -26,10 +26,10 @@ The following images have been scaled to a 4x factor using different algorithms 
 <figure><h3>Scale4x</h3>
 {% include image.html src="scaling/crystal-s4x" class="scaling-preview" no2x=true %}
 </figure>
-<figure><h3>Anti-aliased Sacle2x</h3>
+<figure><h3>Anti-aliased Scale2x</h3>
 {% include image.html src="scaling/crystal-aas2x" class="scaling-preview" no2x=true %}
 </figure>
-<figure><h3>Anti-aliased Sacle4x</h3>
+<figure><h3>Anti-aliased Scale4x</h3>
 {% include image.html src="scaling/crystal-aas4x" class="scaling-preview" no2x=true %}
 </figure>
 <figure><h3>HQ2x</h3>
@@ -59,10 +59,10 @@ The following images have been scaled to a 4x factor using different algorithms 
 <figure><h3>Scale4x</h3>
 {% include image.html src="scaling/shantae-s4x" class="scaling-preview" no2x=true %}
 </figure>
-<figure><h3>Anti-aliased Sacle2x</h3>
+<figure><h3>Anti-aliased Scale2x</h3>
 {% include image.html src="scaling/shantae-aas2x" class="scaling-preview" no2x=true %}
 </figure>
-<figure><h3>Anti-aliased Sacle4x</h3>
+<figure><h3>Anti-aliased Scale4x</h3>
 {% include image.html src="scaling/shantae-aas4x" class="scaling-preview" no2x=true %}
 </figure>
 <figure><h3>HQ2x</h3>
@@ -92,10 +92,10 @@ The following images have been scaled to a 4x factor using different algorithms 
 <figure><h3>Scale4x</h3>
 {% include image.html src="scaling/infinity-s4x" class="scaling-preview" no2x=true %}
 </figure>
-<figure><h3>Anti-aliased Sacle2x</h3>
+<figure><h3>Anti-aliased Scale2x</h3>
 {% include image.html src="scaling/infinity-aas2x" class="scaling-preview" no2x=true %}
 </figure>
-<figure><h3>Anti-aliased Sacle4x</h3>
+<figure><h3>Anti-aliased Scale4x</h3>
 {% include image.html src="scaling/infinity-aas4x" class="scaling-preview" no2x=true %}
 </figure>
 <figure><h3>HQ2x</h3>
