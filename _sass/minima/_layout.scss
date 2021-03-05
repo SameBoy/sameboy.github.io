@@ -194,3 +194,86 @@
     }
   }
 }
+
+section.latest {
+    background-color: $grey-color-light;
+    padding: 16px;
+    border-radius: 12px;
+    position: relative;
+    * {
+        margin:0;
+    }
+    @media screen and (min-width: $on-palm + 1) {
+        ul {
+            position: absolute;
+            right: 16px;
+            top: 16px;
+            height: calc(100% - 32px);
+            li {
+                height: 25%;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+    .post-link {
+        font-size: 40px;
+        @media screen and (max-width: $on-palm) {
+            font-size:32px;
+        }
+        margin: 8px 0;
+    }
+    margin-bottom:24px;
+}
+
+section.release {
+    ul {
+        padding-left:0;
+        margin-left:0;
+        list-style-type: none
+    }
+    li a::before {
+        height:16px;
+        width: 28px;
+        display: inline-block;
+        content:"";
+        background-size: 16px 16px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+li.mac a::before {
+    background-image: url(/apple.svg);
+    vertical-align: -1px;
+}
+
+li.windows a::before {
+    background-image: url(/windows.svg);
+    vertical-align: -1px;
+}
+
+li.source a::before {
+    background-image: url(/source.svg);
+    vertical-align: -2px;
+}
+
+li.info a::before {
+    background-image: url(/info.svg);
+    vertical-align: -2px;
+}
+
+.collapsable {
+    overflow:hidden;
+    margin-left:32px;
+}
+
+.collapse .arrow {
+    float: left;
+    width:16px;
+    height:16px;
+    background-image: url('/arrow.svg');
+    background-size: 16px 16px;
+    margin: 9px;
+    transform: rotate(-90deg)
+}
