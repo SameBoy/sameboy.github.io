@@ -1,0 +1,5 @@
+---
+layout: none
+permalink: /latest_version
+---
+{% for post in site.posts %}{% if post.group == "Downloads" %}{{ post.title | replace: "SameBoy ", "" }}|{{post.cocoa}}{%break%}{% endif %}{% endfor %}
