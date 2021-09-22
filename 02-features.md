@@ -16,18 +16,25 @@ lightbox: true
  * High quality 96KHz audio[^1]
  * Battery save support
  * Save states
+   * Follows the [BESS](https://github.com/LIJI32/SameBoy/blob/master/BESS.md) specification for cross-compatibility with other emulators
  * Includes open source boot ROMs for all emulated models:
    * Complete support for (and documentation of) *all* game-specific palettes in the CGB/AGB boot ROM, for accurate emulation of Game Boy games on a Game Boy Color
    * Supports manual palette selection with key combinations, with 4 additional new palettes (A + B + direction)
    * Supports palette selection in a CGB game, forcing it to run in 'paletted' DMG mode, if ROM allows doing so
    * Support for games with a non-Nintendo logo in the header
    * No long animation in the DMG boot ROM
- * Four settings of color correction
- * Three settings of high-pass audio filters
+ * Six settings of color correction
+   * Adjustable ambient light temperature
+ * Three audio high-pass filter modes
  * Real time clock emulation
+ * Local link cable and infra-red emulation[^3]
  * Game Boy Camera emulation[^2]
  * Game Boy Printer emulation[^3]
+ * Workboy emulation[^3]
  * Turbo, rewind and slow-motion modes
+ * Cheat support[^3]
+ * Rumble support, including in games that are not rumble-enabled
+ * Integrated, highly-compatible GBS player[^3]
  
 ## <a name="accuracy">Accuracy</a>
 
@@ -40,8 +47,9 @@ lightbox: true
  * Emulates [PCM_12 and PCM_34 registers](https://github.com/LIJI32/GBVisualizer)
  * T-cycle accurate emulation of LCD timing effects, supporting the Demotronic trick, Prehistorik Man, [GBVideoPlayer](https://github.com/LIJI32/GBVideoPlayer) and other tech demos
  * Regularly tested against a suite of over 2900 games via [automatic testing](/automation/), with a success rate of over 99% on both DMG and CGB games
- * Optional frame blending[^4]
+ * Two optional frame blending modes[^4]
  * Sample-accurate sound emulation, downsampled from 2MHz
+ * Optional realistic emulation of audio interference
  
   
 ## User Interface
@@ -55,6 +63,7 @@ lightbox: true
  * Customizable controls
  * Joypad support
  * Fullscreen support, optionally keeping aspect ratio
+ * Optional update checker and installer[^3]
 
 These features are currently exclusive to the macOS Cocoa port
 

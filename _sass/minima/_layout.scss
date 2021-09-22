@@ -277,3 +277,39 @@ li.info a::before {
     margin: 9px;
     transform: rotate(-90deg)
 }
+
+.filter-demo {
+    border-radius: 8px;
+    text-align:center;
+    background:#222;
+    img {
+        image-rendering: pixelated;
+    }
+    ul {
+        position:relative;
+        top:16px;
+        text-align:left;
+        float: left;
+        list-style: none;
+        margin:0;
+        width: 240px;
+        background:#d8d8d8;
+    }
+    li {
+        padding:8px;
+        cursor: pointer;
+    }
+    li.selected {
+        color: white;
+        background:#222;
+    }
+    .sample {
+        margin: 4px;
+        cursor:pointer;
+    }
+    margin-bottom: 20px;
+}
+#scaling-image {
+    margin: 8px;
+    border-radius:4px;
+}
