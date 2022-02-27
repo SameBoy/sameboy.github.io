@@ -6,5 +6,5 @@ permalink: /automation_frame/
 {%- capture rawContent -%}
 {% include_relative automation/results.html %}
 {%- endcapture -%}
-{{ rawContent | split: "</head>" | last }}
+{{ rawContent | split: "</head>" | last | split "</body>" | first }}
 
