@@ -1,0 +1,4 @@
+[submodule "automation"]
+	path = automation
+	url = https://github.com/LIJI32/SameBoy.git
+	branch = automation_results
