@@ -6,7 +6,7 @@ title: Scaling
 slideshow: true
 ---
 
-Starting with version 0.4, the Cocoa version of SameBoy supports several GPU-accelerated scaling filters, some of which are exclusive to SameBoy. This document describes the filters supported by SameBoy.
+SameBoy supports several GPU-accelerated scaling filters, some of which are exclusive to SameBoy. This document describes the filters supported by SameBoy.
 
 ## Comparison
 The following images have been scaled to a 4x factor using different filters supported by SameBoy, so you can compare how they perform.

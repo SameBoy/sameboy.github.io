@@ -28,6 +28,11 @@ body {
   font-kerning: normal;
 }
 
+body, html {
+    overflow-x:hidden;
+    max-width:100%;
+}
+
 p {
   text-align: justify;
 }
@@ -44,24 +49,52 @@ ul, ol, dl, figure,
 }
 
 .site-header h1 {
-    text-align:center;
-    padding:24px 0;
-    @media screen and (max-width: $on-palm), screen and (max-height: 800px) {
-        padding: 12px 0;
-    }
+    padding-top:16px;
 }
 
 .site-header h1 img {
-    @media screen and (max-width: $on-palm), screen and (max-height: 800px) {
-        height: 64px;
-    }
+    height: 64px;
 }
 
 .tag-line {
-    text-align:center;
-    font-size:20px;
-    @media screen and (max-width: $on-palm), screen and (max-height: 800px) {
-        font-size:17px;
+    font-size:24px;
+    text-justify: none;
+    white-space: nowrap;
+}
+
+@include media-query($on-palm) {
+    .tag-line {
+        display:none;
+    }
+    .header-logo {
+        position:static !important;
+        width:80px!important;
+        top:8px;
+        left:8px;
+    }
+    .site-header {
+    }
+    .site-header h1 {
+        position:absolute!important;
+        left:80px;
+        top:8px;
+        height:80px;
+        padding:0;
+        margin:0;
+        background-image: url('/logo.svg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+    }
+    .site-header h1 img {
+        opacity: 0%;
+    }
+    .site-header > div {
+        margin:0 !important;
+        position:relative;        
+        width:100%;
+        padding:8px 0;
+        height:80px;
     }
 }
 
@@ -124,7 +157,9 @@ figcaption {
  * Lists
  */
 ul, ol {
-  margin-left: $spacing-unit;
+  padding-right: $spacing-unit;
+  position: relative;
+  left: $spacing-unit;
 }
 
 li {
@@ -139,10 +174,14 @@ li {
 /**
  * Headings
  */
-h1, h2, h3, h4, h5, h6 {
-  font-weight: $base-font-weight + 100;
+
+h1 {
+    font-weight: bold;
 }
 
+h2, h3, h4, h5, h6 {
+  font-weight: $base-font-weight + 100;
+}
 
 
 /**
@@ -152,14 +191,14 @@ a:link {
   color: $brand-color;
   text-decoration: none;
 
-  &:visited {
-    color: darken($brand-color, 15%);
-  }
-
   &:hover {
     color: $text-color;
     text-decoration: underline;
   }
+}
+
+a:visited {
+  color: $brand-color;
 }
 
 .download-link {

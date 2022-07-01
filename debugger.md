@@ -100,122 +100,38 @@ Note that this order is different than the standard order of operations in C and
 
 The information in this section is accessible inside SameBoy itself using the `help` command.
 
-### continue
-Continue running until next stop.
-
-Usage: `continue`
-
-### next
-Run the next instruction, skipping over function calls.
-
-Usage: `next`
-
-### step
-Run the next instruction, stepping into function calls.
-
-Usage: `step`
-
-### finish
-Run until the current function returns.
-
-Usage: `finish`
-
-### backtrace
-Display the current call stack.
-
-Usage: `backtrace`
-
-Aliases: `bt`
-
-### sld
-Like finish, but stops if a stack leak is detected (Experimental).
-
-Usage: `sld`
-
-### ticks
-Display the number of CPU ticks since the last time `ticks` was used.
-
-Usage: `ticks`
-
-### registers
-Print values of processor registers and other important registers.
-
-Usage: `registers`
-
-### cartridge
-Displays information about the MBC and cartridge.
-
-Usage: `cartridge`
-
-Aliases: `mbc`
-
-### apu
-Displays information about the current state of the audio chip
-
-Usage: `apu`
-
-### wave
-Prints a visual representation of the wave RAM. Modifiers can be used for a (f)ull print (the default), a more (c)ompact one, or a one-(l)iner.
-
-Usage: `wave[/(f|c|l)]`
-
-### lcd
-Displays information about the current state of the LCD controller
-
-Usage: `lcd`
-
-### palettes
-Displays the current CGB palettes.
-
-Usage: `palettes`
-
-### breakpoint
-Add a new breakpoint at the specified address/expression. Can also modify the condition of existing breakpoints. If the j modifier is used, the breakpoint will occur just before jumping to the target.
-
-
-Usage: `breakpoint[/j] <expression>[ if <condition expression>]`
-
-### delete
-Delete a breakpoint by its address, or all breakpoints.
-
-Usage: `delete [<expression>]`
-
-### watch
-Add a new watchpoint at the specified address/expression. Can also modify the condition and type of existing watchpoints. Default watchpoint type is write-only.
-
-Usage: `watch[/(r|w|rw)] <expression>[ if <condition expression>]`
-
-### unwatch
-Delete a watchpoint by its address, or all watchpoints.
-
-Usage: `unwatch [<expression>]`
-
-### list
-List all set breakpoints and watchpoints
-
-Usage: `list`
-
-### print
-Evaluate and print an expression. Use modifier to format as an address (a, default) or as a number in decimal (d), hexadecimal (x), octal (o) or binary (b).
-
-Usage: `print[/format] <expression>`
-
-Aliases: `eval`
-
-### examine
-Examine values at address.
-
-Usage: `examine[/count] <expression>`
-
-Aliases: `x`
-
-### disassemble
-Disassemble instructions at address.
-
-Usage: `disassemble[/count] <expression>`
-
-### help
-List available commands or show help for the specified command.
-
-Usage: `help [<command>]`
-
+<table>
+<tr><th><strong>c</strong>ontinue</th><td><p>Continue running until next stop</p><p>Usage: <code>continue</code></p></td></tr>
+<tr><th><strong>n</strong>ext</th><td><p>Run the next instruction, skipping over function calls</p><p>Usage: <code>next</code></p></td></tr>
+<tr><th><strong>s</strong>tep</th><td><p>Run the next instruction, stepping into function calls</p><p>Usage: <code>step</code></p></td></tr>
+<tr><th><strong>f</strong>inish</th><td><p>Run until the current function returns</p><p>Usage: <code>finish</code></p></td></tr>
+<tr><th><strong>u</strong>ndo</th><td><p>Revert the last command</p><p>Usage: <code>undo</code></p></td></tr>
+<tr><th><strong>r</strong>egisters</th><td><p>Print values of processor registers and other important registers</p><p>Usage: <code>registers</code></p></td></tr>
+<tr><th><strong>ba</strong>cktrace</th><td><p>Display the current call stack</p><p>Usage: <code>backtrace</code></p><p>Alias: <code><strong>bt</strong></code></p></td></tr>
+<tr><th><strong>p</strong>rint</th><td><p>Evaluate and print an expression
+ Use modifier to format as an address (a, default) or as a number in
+ decimal (d), hexadecimal (x), octal (o) or binary (b).</p><p>Usage: <code>print/format &lt;expression&gt;</code></p><p>Alias: <code><strong>ev</strong>al</code></p></td></tr>
+<tr><th><strong>ex</strong>amine</th><td><p>Examine values at address</p><p>Usage: <code>examine/count &lt;expression&gt;</code></p><p>Alias: <code><strong>x</strong></code></p></td></tr>
+<tr><th><strong>d</strong>isassemble</th><td><p>Disassemble instructions at address</p><p>Usage: <code>disassemble/count &lt;expression&gt;</code></p></td></tr>
+<tr><th><strong>b</strong>reakpoint</th><td><p>Add a new breakpoint at the specified address/expression
+ Can also modify the condition of existing breakpoints.
+ If the j modifier is used, the breakpoint will occur just before
+ jumping to the target.</p><p>Usage: <code>breakpoint/j &lt;expression&gt;[ if &lt;condition expression&gt;]</code></p></td></tr>
+<tr><th><strong>de</strong>lete</th><td><p>Delete a breakpoint by its address, or all breakpoints</p><p>Usage: <code>delete [&lt;expression&gt;]</code></p></td></tr>
+<tr><th><strong>w</strong>atch</th><td><p>Add a new watchpoint at the specified address/expression.
+ Can also modify the condition and type of existing watchpoints.
+ Default watchpoint type is write-only.</p><p>Usage: <code>watch/(r|w|rw) &lt;expression&gt;[ if &lt;condition expression&gt;]</code></p></td></tr>
+<tr><th><strong>unw</strong>atch</th><td><p>Delete a watchpoint by its address, or all watchpoints</p><p>Usage: <code>unwatch [&lt;expression&gt;]</code></p></td></tr>
+<tr><th><strong>so</strong>ftbreak</th><td><p>Enable or disable software breakpoints</p><p>Usage: <code>softbreak (on|off)</code></p></td></tr>
+<tr><th><strong>l</strong>ist</th><td><p>List all set breakpoints and watchpoints</p><p>Usage: <code>list</code></p></td></tr>
+<tr><th><strong>ti</strong>cks</th><td><p>Display the number of CPU ticks since the last time 'ticks' was
+             used</p><p>Usage: <code>ticks</code></p></td></tr>
+<tr><th><strong>ca</strong>rtridge</th><td><p>Display information about the MBC and cartridge</p><p>Usage: <code>cartridge</code></p><p>Alias: <code><strong>mbc</strong></code></p></td></tr>
+<tr><th><strong>apu</strong></th><td><p>Display information about the current state of the audio processing unit</p><p>Usage: <code>apu [channel (1-4, 5 for NR5x)]</code></p></td></tr>
+<tr><th><strong>wav</strong>e</th><td><p>Print a visual representation of the wave RAM.
+             Modifiers can be used for a (f)ull print (the default),
+             a more (c)ompact one, or a one-(l)iner</p><p>Usage: <code>wave/(f|c|l) </code></p></td></tr>
+<tr><th><strong>lcd</strong></th><td><p>Display information about the current state of the LCD controller</p><p>Usage: <code>lcd</code></p></td></tr>
+<tr><th><strong>pal</strong>ettes</th><td><p>Display the current CGB palettes</p><p>Usage: <code>palettes</code></p></td></tr>
+<tr><th><strong>dma</strong></th><td><p>Display the current OAM DMA status</p><p>Usage: <code>dma</code></p></td></tr>
+<tr><th><strong>h</strong>elp</th><td><p>List available commands or show help for the specified command</p><p>Usage: <code>help [&lt;command&gt;]</code></p></td></tr></table>

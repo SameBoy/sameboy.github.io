@@ -2,38 +2,58 @@
  * Site header
  */
 .site-header {
-  border-top: 5px solid $grey-color-dark;
-  border-bottom: 2px solid $grey-color-light;
   min-height: 56px;
 
   // Positioning context for the mobile navigation icon
   position: relative;
+  width:100%;
+  text-align: center;
 }
+
+.site-header > div {
+  text-align: left;
+  position: relative;
+  display:inline-block;
+  margin-left:144px;
+  margin-top:12px;
+}
+
+.header-logo {
+    position:absolute;
+    left:-144px;
+    top:3px;
+} 
 
 .site-nav {
   line-height: 56px;
+  text-align: center;
 
   .page-link {
     color: $text-color;
     display: inline-block;
     height:100%;
     padding: 0 8px;
+    text-align: center;
+  }
+  
+  .page-link::before {
+      content:attr(data-title);
+      font-weight:bold;
+      display:block;
+      height:0px !important;
+      overflow:hidden;
   }
   
   .page-link.current {
-    background: $grey-color-light;
-    border-top: $grey-color-dark solid 4px;
+      font-weight:bold;
   }
 
   @media screen and (max-width: $on-palm), screen and (max-height: 800px) {
     text-align:center;
     line-height:36px;
-    .page-link.current {
-      background: none;
-      font-weight: bold;
-      border: none;
-    }
   }
+  
+  border-bottom: 1px solid $grey-color-light;
 }
 
 
@@ -84,6 +104,9 @@
 
 .footer-col-2 {
   width: 50%;
+}
+
+.footer-col-2 p{
   text-align:center;
 }
 
@@ -196,9 +219,11 @@
 }
 
 section.latest {
-    background-color: $grey-color-light;
+    background-color: #fcfcfc;
     padding: 16px;
-    border-radius: 12px;
+    border-radius: 4px;
+    border: 1px solid rgba(0,0,0,0.4);
+    box-shadow: rgba(0,0,0,0.25) 0px 2px 12px;
     position: relative;
     * {
         margin:0;
@@ -208,6 +233,7 @@ section.latest {
             position: absolute;
             right: 16px;
             top: 16px;
+            left:initial !important;
             height: calc(100% - 32px);
             li {
                 height: 25%;
@@ -288,6 +314,8 @@ li.info a::before {
     ul {
         position:relative;
         top:16px;
+        left:0;
+        padding:0;
         text-align:left;
         float: left;
         list-style: none;
@@ -312,4 +340,118 @@ li.info a::before {
 #scaling-image {
     margin: 8px;
     border-radius:4px;
+}
+
+.gallery-item {
+    display:inline-block;
+    position:relative;
+    width:386px;
+    top:0;
+}
+
+#gallery {
+    white-space: nowrap;
+    float:right;
+    padding: 0px 24px;
+    text-align: center;
+    width:400px;
+    height:414px;
+    position:relative;
+    overflow: hidden;
+    margin-top:-64px;
+    margin-right:-24px;
+}
+
+#gallery img {
+    border: 1px solid rgba(0,0,0,0.4);
+    box-shadow: rgba(0,0,0,0.25) 0px 2px 12px;
+    border-radius:2px;
+    margin:24px 32px;
+    background:black;
+    max-width: none;
+}
+
+#gallery .sgb {
+    margin:0;
+}
+
+
+#gallery .game-title {
+    font-weight:bold;
+    font-size:18px;
+    padding-top:8px;
+}
+
+#gallery .platform {
+    font-style: italic;
+    padding-top:4px;
+    font-size:14px;
+}
+
+@include media-query($on-palm) {
+    #gallery {
+        white-space: nowrap;
+        float:none;
+        width:400px;
+        margin-top:0;
+        margin-right:0;
+        left:calc(50% - 232px);
+    }
+}
+
+.zoom-out {
+    transition: all 1s;
+    opacity:0%;
+    top:-24px;
+    transform: scale(0.75);
+}
+
+.clearfix {
+    clear:both;
+}
+
+.left-float {
+    float:left;
+    margin-left:-256px;
+}
+
+.right-float {
+    float:right;
+    margin-right:-256px;
+    padding-left:32px;
+}
+
+.hard-right-float {
+    float:right;
+    margin-right:-400px;
+    padding-left:40px;
+}
+
+.center-image {
+    max-width:none!important;
+    position:relative;
+    left: -80px;
+}
+
+
+@include media-query($on-palm) {
+    .center-image, .hard-right-float, .right-float, .left-float {
+        float:none;
+        display:block;
+        width:100%;
+        margin:0;
+        position:static;
+        padding:0;
+    }
+}
+
+th {
+    font-weight: inherit;
+    background: #ddd;
+}
+
+th, td {
+    vertical-align: top;
+    text-align: left;
+    padding:8px;
 }

@@ -1,23 +1,22 @@
-<header class="site-header" role="banner">
-
-  <div class="wrapper">
+<div class="wrapper">
+  <header class="site-header" role="banner">
+    <div>
+    <a class="site-title" href="{{ "/" | relative_url}}">{% include image.html src="icon" width="128" class="header-logo" %}</a>
     <h1><a class="site-title" href="{{ "/" | relative_url}}"><img src="{{ "/logo.svg" | relative_url }}" alt="{{ site.title | escape }}"/></a></h1>
     <p class="tag-line">{{ site.description | escape }}</p>
-
-    <nav class="site-nav">
-        {% for my_page in site.pages %}
-          {% if my_page.title and (my_page.group == null) %}
-          {% if page.url == my_page.url or page.group == my_page.title %}
-          <a class="page-link current" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-          {% else %}
-          <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-          {% endif %}
-          {% endif %}
-        {% endfor %}
-        <a class="page-link" href="https://github.com/LIJI32/SameBoy">GitHub</a>
-        <a class="page-link" href="https://github.com/LIJI32/SameBoy/issues">Bug Tracker</a>
-    </nav>
-
-  </div>
-
-</header>
+    </div>
+  </header>
+  <nav class="site-nav">
+      {% for my_page in site.pages %}
+        {% if my_page.title and (my_page.group == null) %}
+        {% if page.url == my_page.url or page.group == my_page.title %}
+        <a data-title="{{ my_page.title | escape }}" class="page-link current" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+        {% else %}
+        <a data-title="{{ my_page.title | escape }}" class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+        {% endif %}
+        {% endif %}
+      {% endfor %}
+      <a data-title="GitHub" class="page-link" href="https://github.com/LIJI32/SameBoy">GitHub</a>
+      <a data-title="Bug Tracker" class="page-link" href="https://github.com/LIJI32/SameBoy/issues">Bug Tracker</a>
+  </nav>
+</div>
