@@ -97,3 +97,4 @@ These features are currently exclusive to the macOS Cocoa port
  [^1]: Only in the Cocoa macOS port; graphical noise is used instead of camera input in the SDL version
  [^2]: Only in the Cocoa macOS port
  [^3]: Requires OpenGL 3.2 or Metal support
+<script>setTimeout(function(){document.body.style.transform="scale(1.0)",setTimeout(function(){document.body.style.transform=""}, 0.5)}, 0.5)</script>
