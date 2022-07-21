@@ -15,7 +15,7 @@ The purpose of this page is to document the different commands of SameBoy's text
 
 SameBoy's textual debugger is available in both the Cocoa and SDL ports, and allows advanced debugging of Game Boy ROMs. In the Cocoa port, the debugger can be access by enabling developer mode from the menu bar, and showing the console. In the SDL port, the debugger can be accessed by running SameBoy from the terminal, then it can be interacted with in the terminal. In the Windows SDL port, open the ROM with `sameboy_debugger.exe` instead of `sameboy.exe`.
 
-In all versions, `^C` (Control + C) breaks the execution of the ROM and allows input of debugger commands. In both the Cocoa version and the SDL version when not running on Windows, some commands can be used asynchronously without stopping the execution.
+In all versions, `^C` (Control + C) breaks the execution of the ROM and allows input of debugger commands. Some commands can be used asynchronously without stopping the execution.
 
 ## Command Syntax
 
