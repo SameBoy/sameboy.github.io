@@ -122,7 +122,7 @@ The information in this section is accessible inside SameBoy itself using the `h
  Can also modify the condition and type of existing watchpoints.
  Default watchpoint type is write-only.</p><p>Usage: <code>watch/(r|w|rw) &lt;expression&gt;[ if &lt;condition expression&gt;]</code></p></td></tr>
 <tr><th><strong>unw</strong>atch</th><td><p>Delete a watchpoint by its address, or all watchpoints</p><p>Usage: <code>unwatch [&lt;expression&gt;]</code></p></td></tr>
-<tr><th><strong>so</strong>ftbreak</th><td><p>Enable or disable software breakpoints</p><p>Usage: <code>softbreak (on|off)</code></p></td></tr>
+<tr><th><strong>so</strong>ftbreak</th><td><p>Enable or disable software breakpoints (<code>ld b, b</code> opcodes)</p><p>Usage: <code>softbreak (on|off)</code></p></td></tr>
 <tr><th><strong>l</strong>ist</th><td><p>List all set breakpoints and watchpoints</p><p>Usage: <code>list</code></p></td></tr>
 <tr><th><strong>ti</strong>cks</th><td><p>Display the number of CPU ticks since the last time 'ticks' was
              used</p><p>Usage: <code>ticks</code></p></td></tr>
