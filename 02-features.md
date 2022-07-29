@@ -12,7 +12,6 @@ permalink: /features/
  * Supports accurate high level emulation of Super Game Boy (SGB; NTSC and PAL) and Super Game Boy 2 (SGB2)
  * High quality 96KHz audio
  * Battery save support
- * High quality 96KHz audio
  * Save states
    * Follows the [BESS](https://github.com/LIJI32/SameBoy/blob/master/BESS.md) specification for cross-compatibility with other emulators
  * Includes open source boot ROMs for all emulated models:
