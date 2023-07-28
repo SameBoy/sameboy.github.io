@@ -19,7 +19,7 @@ In all versions, `^C` (Control + C) breaks the execution of the ROM and allows i
 
 ## Command Syntax
 
-Debugger commands being with the commands, followed optionally by a slash (`/`) and a modifier, and then followed optionally by a space and the argument.
+Debugger commands begin with the command itself, followed optionally by a slash (`/`) and a modifier, and then followed optionally by a space and the argument.
 
 For example, a command with no modifier and no argument:
 ```
