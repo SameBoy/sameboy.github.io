@@ -1,0 +1,12 @@
+---
+layout: none
+permalink: /repo/Release
+---
+Origin: SameBoy
+Label: SameBoy
+Suite: stable
+Version: 1.0
+Codename: SameBoy
+Architectures: iphoneos-arm iphoneos-arm64
+Components: main
+Description: SameBoy's repository for iOS and iPadOS

@@ -18,6 +18,12 @@ group: News
       {% if page.windows %}
       <li><a href="{{page.windows}}">Download for Windows</a></li>
       {%  endif %}
+      {% if page.ipa %}
+      <li><a href="{{post.ipa}}">Download for iOS (IPA)</a></li>
+      {%  endif %}
+      {% if page.ios-deb %}
+      <li><a href="{{post.ios-deb}}">Download for iOS (Deb)</a></li>
+      {%  endif %}
       {% if page.source %}
       <li><a href="{{page.source}}">Download source code</a></li>
       {%  endif %}
@@ -25,8 +31,4 @@ group: News
     <h2>Changes</h2>
     {{ content }}
   </div>
-
-  {% if site.disqus.shortname %}
-    {% include disqus_comments.html %}
-  {% endif %}
 </article>

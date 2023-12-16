@@ -68,8 +68,16 @@ SameBoy is a user friendly, powerful and [open source](https://github.com/LIJI32
   <a id="download-link" class="download-link" href="{{ post.url | relative_url }}">Download {{ post.title | escape }}</a>
   <script src="/assets/jquery-3.1.1.min.js"></script>
   <script src="/assets/home-slideshow.js"></script>
-  <script>
-  if (navigator.userAgent.indexOf("Macintosh") != -1) {
+  <script>// <!-- 
+  var iPad = navigator.userAgent.indexOf("Macintosh") != -1 && navigator.maxTouchPoints && navigator.maxTouchPoints > 1;
+  var iOS = navigator.userAgent.indexOf("iOS") != -1 || navigator.userAgent.indexOf("iPadOS") != -1 || navigator.userAgent.indexOf("iPhone") != -1 || iPad;
+  if (iOS) {
+      document.getElementById("download-link").outerHTML = '<span class="download-link">Download {{ post.title | escape }}:</span><ul>' +
+      '<li><a href="{{ post.ipa }}">IPA for side-loading</a></li>' +
+      '<li>Add to <a href="cydia://url/https://cydia.saurik.com/api/share#?source=https://sameboy.github.io/repo">Cydia</a> / <a href="zbra://sources/add/https://sameboy.github.io/repo">Zebra</a> / <a href="sileo://source/https://sameboy.github.io/repo">Sileo</a></li>' +
+      '</ul>';
+  }
+  else if (navigator.userAgent.indexOf("Macintosh") != -1) {
       document.getElementById("download-link").innerHTML += " for macOS";
       document.getElementById("download-link").href = "{{ post.cocoa }}";
   }
@@ -77,6 +85,7 @@ SameBoy is a user friendly, powerful and [open source](https://github.com/LIJI32
       document.getElementById("download-link").innerHTML += " for Windows";
       document.getElementById("download-link").href = "{{ post.windows }}";
   }
+  // -->
   </script>
   {% break %}
 {% endif %}

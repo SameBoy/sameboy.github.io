@@ -21,6 +21,12 @@ permalink: /downloads/
     {% if post.windows %}
     <li class="windows"><a href="{{post.windows}}">Download for Windows</a></li>
     {%  endif %}
+    {% if post.ipa %}
+    <li class="ios"><a href="{{post.ipa}}">Download for iOS (IPA)</a></li>
+    {%  endif %}
+    {% if post.ios-deb %}
+    <li class="ios"><a href="{{post.ios-deb}}">Download for iOS (Deb)</a></li>
+    {%  endif %}
     {% if post.source %}
     <li class="source"><a href="{{post.source}}">Download source code</a></li>
     {%  endif %}
@@ -42,6 +48,12 @@ permalink: /downloads/
         {%  endif %}
         {% if post.windows %}
         <li class="windows"><a href="{{post.windows}}">Download for Windows</a></li>
+        {%  endif %}
+        {% if post.ipa %}
+        <li class="ios"><a href="{{post.ipa}}">Download for iOS (IPA)</a></li>
+        {%  endif %}
+        {% if post.ios-deb %}
+        <li class="ios"><a href="{{post.ios-deb}}">Download for iOS (DEB)</a></li>
         {%  endif %}
         {% if post.source %}
         <li class="source"><a href="{{post.source}}">Download source code</a></li>

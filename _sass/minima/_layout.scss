@@ -221,7 +221,7 @@
 
 section.latest {
     background-color: #fcfcfc;
-    padding: 16px;
+    padding: 36px 16px;
     border-radius: 4px;
     border: 1px solid rgba(0,0,0,0.4);
     box-shadow: rgba(0,0,0,0.25) 0px 2px 12px;
@@ -237,7 +237,7 @@ section.latest {
             left:initial !important;
             height: calc(100% - 32px);
             li {
-                height: 25%;
+                height: 16.67%;
                 display: flex;
                 align-items: center;
             }
@@ -272,6 +272,11 @@ section.release {
 
 li.mac a::before {
     background-image: url(/apple.svg);
+    vertical-align: -1px;
+}
+
+li.ios a::before {
+    background-image: url(/ios.svg);
     vertical-align: -1px;
 }
 
