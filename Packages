@@ -3,15 +3,18 @@ layout: none
 permalink: /repo/Packages
 ---
 
+{% for post in site.posts %}{% if post.group == "Downloads" and post.ios-deb %}
 Package: com.github.liji32.sameboy.ios
 Name: SameBoy
-Depends: firmware (>= 11.0)
 Architecture: iphoneos-arm
 Description: A Game Boy emulator for iOS
 Maintainer: Lior Halphon
 Author: Lior Halphon
-Section: Games
-Icon: /repo/CydiaIcon.png{% for post in site.posts %}{% if post.group == "Downloads" %}
 Version: {{ post.title | replace: "SameBoy ", "" }}
-Filename: {{post.ios-deb}}{%break%}{% endif %}{% endfor %}
-Tags: compatible_min::ios11.0
+Section: Games
+Tag: compatible_min::ios11.0
+Depends: firmware (>= 11.0)
+Filename: {{post.ios-deb}}
+Icon: https://sameboy.github.io/repo/CydiaIcon.png
+{% endif %}{% endfor %}
+
