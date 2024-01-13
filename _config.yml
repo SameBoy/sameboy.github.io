@@ -19,7 +19,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: LIJI32
 github_username:  LIJI32
-copyright: Copyright Lior Halphon © 2015–2023
+copyright: Copyright Lior Halphon © 2015–2024
 permalink: /posts/:title
 
 # Build settings
