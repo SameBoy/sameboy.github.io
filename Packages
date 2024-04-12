@@ -6,7 +6,7 @@ permalink: /repo/Packages
 {% for post in site.posts %}{% if post.group == "Downloads" and post.ios-deb %}
 Package: com.github.liji32.sameboy.ios
 Name: SameBoy
-Architecture: iphoneos-arm iphoneos-arm64
+Architecture: all
 Description: A Game Boy emulator for iOS
 Maintainer: Lior Halphon
 Author: Lior Halphon

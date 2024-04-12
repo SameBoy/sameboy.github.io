@@ -7,6 +7,6 @@ Label: SameBoy
 Suite: stable
 Version: 1.0
 Codename: SameBoy
-Architectures: iphoneos-arm iphoneos-arm64
+Architectures: all
 Components: main
 Description: SameBoy's repository for iOS and iPadOS
