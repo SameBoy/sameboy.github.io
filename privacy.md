@@ -3,6 +3,7 @@ layout: page
 permalink: /privacy/
 title: SameBoy for iOS Privacy Policy
 slideshow: true
+group: Home
 ---
 
 App doesn't gather nor upload any personal data.
