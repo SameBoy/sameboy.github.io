@@ -28,7 +28,7 @@ permalink: /features/
  * Game Boy Printer emulation[^2]
  * Workboy emulation[^2]
  * Turbo, rewind and slow-motion modes
- * Cheat support[^2]
+ * Cheat support
  * Rumble support, including in games that are not rumble-enabled
  * Integrated, highly-compatible GBS player[^2]
  * Emulation of the integrated alarm in HuC-3 games[^2] and support for motion-controlled games
@@ -59,7 +59,7 @@ permalink: /features/
  * Joypad support
  * Fullscreen support, optionally keeping aspect ratio
  * Optional speed-run-friendly OSD
- * Control motion games using a joypad's gyro controls[^2], joystick, or your mouse
+ * Control motion games using a joypad's gyro controls, joystick, or your mouse
 
 These features are currently exclusive to the macOS Cocoa port
 
