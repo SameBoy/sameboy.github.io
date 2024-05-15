@@ -2,7 +2,6 @@
 layout: page
 permalink: /privacy/
 title: SameBoy for iOS Privacy Policy
-slideshow: true
 group: Home
 ---
 
