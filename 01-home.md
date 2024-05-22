@@ -66,16 +66,23 @@ SameBoy is a user friendly, powerful and [open source](https://github.com/LIJI32
 {% for post in site.posts %}
 {% if post.group == "Downloads" %}
   <a id="download-link" class="download-link" href="{{ post.url | relative_url }}">Download {{ post.title | escape }}</a>
+  <p class="download-link"><a id="appstore-link" href="https://apps.apple.com/us/app/sameboy/id6496971295">SameBoy for iOS is available on the App Store</a></p>
   <script src="/assets/jquery-3.1.1.min.js"></script>
   <script src="/assets/home-slideshow.js"></script>
   <script>// <!-- 
   var iPad = navigator.userAgent.indexOf("Macintosh") != -1 && navigator.maxTouchPoints && navigator.maxTouchPoints > 1;
   var iOS = navigator.userAgent.indexOf("iOS") != -1 || navigator.userAgent.indexOf("iPadOS") != -1 || navigator.userAgent.indexOf("iPhone") != -1 || iPad;
   if (iOS) {
-      document.getElementById("download-link").outerHTML = '<span class="download-link">Download {{ post.title | escape }}:</span><ul>' +
-      '<li><a href="{{ post.ipa }}">IPA for side-loading</a></li>' +
-      '<li><a href="zbra://sources/add/https://sameboy.github.io/repo">Add to Zebra</a></li>' +
+      appstoreLink = document.getElementById("appstore-link");
+      downloadLink = document.getElementById("download-link");
+      appstoreLink.parentElement.remove()
+      downloadLink.parentElement.insertBefore(appstoreLink.parentElement, downloadLink)
+      appstoreLink.innerHTML = '<img src="appstore.svg" alt="Download on the App Store" />';
+      downloadLink.outerHTML = '<span class="download-link">Running iOS 11 or 12?</span><ul>' +
+      '<li><a href="{{ post.ipa }}">{{ post.title | escape }} IPA for side-loading</a></li>' +
+      '<li><a href="zbra://sources/add/https://sameboy.github.io/repo">Add to SameBoy Zebra</a></li>' +
       '</ul>';
+     
   }
   else if (navigator.userAgent.indexOf("Macintosh") != -1) {
       document.getElementById("download-link").innerHTML += " for macOS";
