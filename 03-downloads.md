@@ -21,6 +21,9 @@ permalink: /downloads/
     {% if post.windows %}
     <li class="windows"><a href="{{post.windows}}">Download for Windows</a></li>
     {%  endif %}
+    {% if post.appstore %}
+    <li class="ios"><a href="https://apps.apple.com/us/app/sameboy/id6496971295">iOS App Store Page</a></li>
+    {%  endif %}
     {% if post.ipa %}
     <li class="ios"><a href="{{post.ipa}}">Download for iOS (IPA)</a></li>
     {%  endif %}
