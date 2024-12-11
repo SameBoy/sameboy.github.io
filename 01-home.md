@@ -61,7 +61,7 @@ permalink: /
 
 
 </div>
-SameBoy is a user friendly, powerful and [open source](https://github.com/LIJI32/SameBoy) Game Boy, Game Boy Color and Super Game Boy emulator for macOS, Windows and Unix-like platforms. SameBoy is extremely [accurate](/features/#accuracy) and includes a wide range of both [powerful debugging features](/features/#debugging) and [user-facing features](/features/#user-interface), making it ideal for both casual players and developers. Of course, SameBoy also has [every feature](/features/) one would expect from an emulator – from save states to [scaling filters](/scaling/).
+SameBoy is a user friendly, powerful and [open source](https://github.com/LIJI32/SameBoy) Game Boy, Game Boy Color and Super Game Boy emulator for macOS, iOS, watchOS, Windows and Unix-like platforms. SameBoy is extremely [accurate](/features/#accuracy) and includes a wide range of both [powerful debugging features](/features/#debugging) and [user-facing features](/features/#user-interface), making it ideal for both casual players and developers. Of course, SameBoy also has [every feature](/features/) one would expect from an emulator – from save states to [scaling filters](/scaling/).
 
 {% for post in site.posts %}
 {% if post.group == "Downloads" %}
