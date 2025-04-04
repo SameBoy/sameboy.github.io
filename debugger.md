@@ -45,7 +45,7 @@ Commands may be truncated if not ambiguous (e.g. `p` instead of `print`) and mig
 
 ### Expressions
 
-All commands that use a number or address as an argument process the argument using a an expression evaluator. Expressions can return 16-bit values or banked 25-bit addresses. The type of an expression affects the command that uses it. (For example, a breakpoint may be on a specific banked address, or every time `pc` reaches a specific value)
+All commands that use a number or address as an argument process the argument using an expression evaluator. Expressions can return 16-bit values or banked 25-bit addresses. The type of an expression affects the command that uses it. (For example, a breakpoint may be on a specific banked address, or every time `pc` reaches a specific value)
 
 #### Constants
 
