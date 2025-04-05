@@ -16,7 +16,11 @@ group: News
       <li><a href="{{page.cocoa}}">Download for macOS</a></li>
       {%  endif %}
       {% if page.windows %}
+      {% if page.windows_js %}
+      <li><a onclick="return DownloadUnique(this);" href="{{page.windows}}">Download for Windows</a></li>
+      {% else %}
       <li><a href="{{page.windows}}">Download for Windows</a></li>
+      {% endif %}
       {%  endif %}
       {% if page.appstore %}
       <li><a href="https://apps.apple.com/us/app/sameboy/id6496971295">iOS App Store Page</a></li>

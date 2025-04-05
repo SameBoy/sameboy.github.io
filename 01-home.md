@@ -91,6 +91,9 @@ SameBoy is a user friendly, powerful and [open source](https://github.com/LIJI32
   else if (navigator.userAgent.indexOf("Windows") != -1) {
       document.getElementById("download-link").innerHTML += " for Windows";
       document.getElementById("download-link").href = "{{ post.windows }}";
+      if ("{{ post.windows_js }}" == "true") {
+          document.getElementById("download-link").onclick = function() {return DownloadUnique(document.getElementById("download-link"));};
+      }
   }
   // -->
   </script>

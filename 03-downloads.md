@@ -19,7 +19,11 @@ permalink: /downloads/
     <li class="mac"><a href="{{post.cocoa}}">Download for macOS</a></li>
     {%  endif %}
     {% if post.windows %}
+    {% if post.windows_js %}
+    <li class="windows"><a onclick="return DownloadUnique(this);" href="{{post.windows}}">Download for Windows</a></li>
+    {% else %}
     <li class="windows"><a href="{{post.windows}}">Download for Windows</a></li>
+    {% endif %}
     {%  endif %}
     {% if post.appstore %}
     <li class="ios"><a href="https://apps.apple.com/us/app/sameboy/id6496971295">iOS App Store Page</a></li>
@@ -50,7 +54,11 @@ permalink: /downloads/
         <li class="mac"><a href="{{post.cocoa}}">Download for macOS</a></li>
         {%  endif %}
         {% if post.windows %}
+        {% if post.windows_js %}
+        <li class="windows"><a onclick="return DownloadUnique(this);" href="{{post.windows}}">Download for Windows</a></li>
+        {% else %}
         <li class="windows"><a href="{{post.windows}}">Download for Windows</a></li>
+        {% endif %}
         {%  endif %}
         {% if post.ipa %}
         <li class="ios"><a href="{{post.ipa}}">Download for iOS (IPA)</a></li>
