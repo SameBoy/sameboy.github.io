@@ -107,11 +107,11 @@ The information in this section is accessible inside SameBoy itself using the `h
 <tr><th><strong>n</strong>ext</th><td><p>Run the next instruction, skipping over function calls</p><p>Usage: <code>next</code></p></td></tr>
 <tr><th><strong>s</strong>tep</th><td><p>Run the next instruction, stepping into function calls</p><p>Usage: <code>step</code></p></td></tr>
 <tr><th><strong>f</strong>inish</th><td><p>Run until the current function returns</p><p>Usage: <code>finish</code></p></td></tr>
-<tr><th><strong>backs</strong>tep</th><td><p>Step one instruction backwards, assuming constant inputs</p><p>Usage: <code>backstep</code></p><p>Alias: <code><strong>bs</strong></code></p></td></tr>
+<tr><th><strong>backs</strong>tep</th><td><p>Step one instruction backward, assuming constant inputs</p><p>Usage: <code>backstep</code></p><p>Alias: <code><strong>bs</strong></code></p></td></tr>
 <tr><th><strong>u</strong>ndo</th><td><p>Revert the last command</p><p>Usage: <code>undo</code></p></td></tr>
 <tr><th><strong>r</strong>egisters</th><td><p>Print values of processor registers and other important registers</p><p>Usage: <code>registers</code></p></td></tr>
 <tr><th><strong>ba</strong>cktrace</th><td><p>Display the current call stack</p><p>Usage: <code>backtrace</code></p><p>Alias: <code><strong>bt</strong></code></p></td></tr>
-<tr><th><strong>p</strong>rint</th><td><p>Evaluate and print an expression. Use modifier to format as an address (a, default) or as a number in decimal (d), hexadecimal (x), octal (o) or binary (b).</p><p>Usage: <code>print[/format] &lt;expression&gt;</code></p><p>Alias: <code><strong>ev</strong>al</code></p></td></tr>
+<tr><th><strong>p</strong>rint</th><td><p>Evaluate and print an expression. Use modifier to format as an address (a) or as a number in decimal (d), hexadecimal (x), octal (o) or binary (b).</p><p>Usage: <code>print[/format] &lt;expression&gt;</code></p><p>Alias: <code><strong>ev</strong>al</code></p></td></tr>
 <tr><th><strong>ex</strong>amine</th><td><p>Examine values at address</p><p>Usage: <code>examine[/count] &lt;expression&gt;</code></p><p>Alias: <code><strong>x</strong></code></p></td></tr>
 <tr><th><strong>d</strong>isassemble</th><td><p>Disassemble instructions at address</p><p>Usage: <code>disassemble[/count] &lt;expression&gt;</code></p></td></tr>
 <tr><th><strong>b</strong>reakpoint</th><td><p>Add a new breakpoint at the specified address/expression or range. Ranges are exclusive by default, unless "inclusive" is used. If the j modifier is used, the breakpoint will occur just before jumping to the target.</p><p>Usage: <code>breakpoint[/j] &lt;expression&gt; [to &lt;end expression&gt; [inclusive]] [if &lt;condition expression&gt;]</code></p></td></tr>
@@ -121,6 +121,7 @@ The information in this section is accessible inside SameBoy itself using the `h
 <tr><th><strong>so</strong>ftbreak</th><td><p>Enable or disable software breakpoints ('ld b, b' opcodes)</p><p>Usage: <code>softbreak (on|off)</code></p></td></tr>
 <tr><th><strong>l</strong>ist</th><td><p>List all set breakpoints and watchpoints</p><p>Usage: <code>list</code></p></td></tr>
 <tr><th><strong>ti</strong>cks</th><td><p>Display the number of CPU ticks since the last time 'ticks' was used. Use 'keep' as an argument to display ticks without reseeting the count.</p><p>Usage: <code>ticks (keep)</code></p></td></tr>
+<tr><th><strong>us</strong>age</th><td><p>Display CPU usage</p><p>Usage: <code>usage</code></p></td></tr>
 <tr><th><strong>ca</strong>rtridge</th><td><p>Display information about the MBC and cartridge</p><p>Usage: <code>cartridge</code></p><p>Alias: <code><strong>mbc</strong></code></p></td></tr>
 <tr><th><strong>apu</strong></th><td><p>Display information about the current state of the audio processing unit</p><p>Usage: <code>apu [channel (1-4, 5 for NR5x)]</code></p></td></tr>
 <tr><th><strong>wav</strong>e</th><td><p>Print a visual representation of the wave RAM. Modifiers can be used for a (f)ull print (the default), a more (c)ompact one, or a one-(l)iner</p><p>Usage: <code>wave[/(f|c|l)] </code></p></td></tr>
