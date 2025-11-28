@@ -37,4 +37,4 @@ No, SameBoy can only emulate a Game Boy Advance running in Game Boy Color compat
 
 ## Additional Support
 
-If you need additional support, or would like to report a bug or request a feature, you can [create an issue on GitHub](https://github.com/LIJI32/SameBoy/issues) or [send an email](mailto:SameBoy.Help@gmail.com).
+If you need additional support, or would like to report a bug or request a feature, you can [create an issue on GitHub](https://github.com/LIJI32/SameBoy/issues) or [send an email](mailto:SameBoy.Dev@icloud.com).
