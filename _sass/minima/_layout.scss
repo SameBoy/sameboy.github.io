@@ -461,3 +461,36 @@ th, td {
     text-align: left;
     padding:8px;
 }
+
+.home-icon {
+    display: inline-block;
+    width: 72px;
+    text-align: center;
+    vertical-align: top;
+    font-size:80%;
+    text-decoration: none !important;
+    padding: 0 6px;
+}
+
+
+.home-icon:hover {
+    color:#111!important;
+}
+
+.home-icon:hover img {
+    opacity: 100%;
+}
+
+.home-icon img {
+    display: block;
+    margin: auto;
+    opacity:60%;
+    margin-bottom:8px;
+    width:50%;
+}
+
+.icon-row
+{
+    padding-left: 12px;
+    padding-top: 12px;
+}

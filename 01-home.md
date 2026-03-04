@@ -100,3 +100,12 @@ SameBoy is a user friendly, powerful and [open source](https://github.com/LIJI32
   {% break %}
 {% endif %}
 {% endfor %}
+
+# Other Links
+
+<div class="icon-row">
+<a class="home-icon" href="https://github.com/sponsors/LIJI32"><img src="heart.png" width="64"/> Sponsor SameBoy</a>
+<a class="home-icon" href="https://github.com/LIJI32/SameBoy"><img src="github.png" width="64"/> GitHub Repo</a>
+<a class="home-icon" href="https://github.com/LIJI32/SameBoy/issues"><img src="bugs.png" width="64"/> Bug Tracker</a>
+<a class="home-icon" href="https://t.co/NUdIgCn8H1"><img src="discord.png" width="64"/> Discord Server</a>
+</div>
