@@ -80,7 +80,7 @@ SameBoy is a user friendly, powerful and [open source](https://github.com/LIJI32
       appstoreLink.innerHTML = '<img src="appstore.svg" alt="Download on the App Store" />';
       downloadLink.outerHTML = '<span class="download-link">Running iOS 11 or 12?</span><ul>' +
       '<li><a href="{{ post.ipa }}">{{ post.title | escape }} IPA for side-loading</a></li>' +
-      '<li><a href="zbra://sources/add/https://sameboy.github.io/repo">Add to SameBoy Zebra</a></li>' +
+      '<li><a href="zbra://sources/add/https://sameboy.github.io/repo">Add SameBoy to Zebra</a></li>' +
       '</ul>';
      
   }
