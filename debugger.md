@@ -49,7 +49,7 @@ All commands that use a number or address as an argument process the argument us
 
 #### Constants
 
-The most simple expression is a constant. Constants may be decimal numbers, hexadecimal numbers, or symbolic addresses. Decimal constants are simply written "as is" (e.g. `1024`); hexadecimal constants are prefixed with a dollar sign (e.g. `$400`). Symbolic constants are simply written by name (e.g. `PlayFXAnimID`) and always return a banked address.
+The most simple expression is a constant. Constants may be decimal numbers, hexadecimal numbers, or symbolic addresses. Decimal constants are simply written "as is" (e.g. `1024`); hexadecimal constants are prefixed with a dollar sign (e.g. `$400`), or alternatively `0x` (e.g. `0x400`). Symbolic constants are simply written by name (e.g. `PlayFXAnimID`) and always return a banked address.
 
 #### Variables
 
